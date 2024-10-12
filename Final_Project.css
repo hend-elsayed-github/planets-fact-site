@@ -1,0 +1,654 @@
+@font-face {
+    font-family: Antonio-Medium;
+    src: url(./Fonts/Antonio/static/Antonio-Medium.ttf);
+}
+
+@font-face {
+    font-family: LeagueSpartan-Bold;
+    src: url(./Fonts/League_Spartan/static/LeagueSpartan-Bold.ttf);
+}
+
+@font-face {
+    font-family: LeagueSpartan-Regular;
+    src: url(./Fonts/League_Spartan/static/LeagueSpartan-Regular.ttf);
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/* the main container div */
+#maindiv{
+    height: 100%;
+    width: 100%;
+    background-color: #070724;
+    background-image: url(./planets-fact-site/starter-code/assets/background-stars.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+/* the upper div that contains the names */
+#planets_name_div{
+    width: 100%;
+    height: 9%;
+    border-bottom: 1px solid #38384f;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* the container of the "THE PLANETS" */
+#the_palnets_div{
+    width: 40%;
+}
+
+/* "THE PLANETS" itself */
+#the_planets{
+    color: white;
+    font-family: Antonio-Medium;
+    font-size: 28px;
+    letter-spacing: -1.05px;
+}
+
+/* the div that contains all the buttons */
+#the_names_div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* style for each name  */
+.planet_name{
+    color: #838391;
+    font-family: LeagueSpartan-Bold;
+    font-size: 11px;
+    letter-spacing: 1px;
+    border: none;
+    height: 100%;
+    background-color: #070724;
+    /* border-top: solid white 4px; */
+    padding: 0;
+    cursor: pointer;
+}
+
+#middle_div{
+    height: 72%;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#center_middle{
+    width: 72.5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#image_div{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_small{
+    width: 139px;
+    height: 169px;
+    position: absolute;
+    /* left: 500px ; */
+    /* top: 350px; */
+    bottom: 25%;
+    z-index: 2;
+    display: none;
+}
+
+#planet_img{
+    max-width: 100%;
+    max-height: 80%;
+    z-index: 1;
+    position: relative;
+}
+
+#facts_div{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 4%;
+}
+
+#name_middle_div{
+    width: 100%;
+}
+
+#name_in_middle{
+    font-size: 80PX;
+    color: white;
+    font-family: Antonio-Medium;
+}
+
+#body_middle_div{
+    /* width: 100%; */
+    height: 44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#body_in_middle{
+    font-size: 14px;
+    color: white;
+    font-family: LeagueSpartan-Regular;
+    line-height: 1.4;
+}
+
+#wikipedia_div{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    column-gap: 5px;
+}
+
+#source{
+    font-size: 14px;
+    color: #838391;
+    font-family: LeagueSpartan-Regular;
+}
+
+#thelink{
+    font-size: 14px;
+    color: #838391;
+    font-family: LeagueSpartan-Bold;
+}
+
+#options_middle_div{
+    width: 100%;
+    /* height: 30%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 15px;
+}
+
+.optionbtn{
+    height: 50px;
+    width: 100%;
+    background-color: #070724;
+    border: solid  #38384f .5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.optionbtn:hover{
+    background-color: #38384f;
+}
+
+.optionnumber{
+    font-size: 12px;
+    font-family: LeagueSpartan-Bold;
+    color: #838391;
+    letter-spacing: 2.57px;
+    margin-left: 20px;
+}
+
+.optionname{
+    font-size: 12px;
+    font-family: LeagueSpartan-Bold;
+    color: white;
+    letter-spacing: 2.57px;
+}
+
+#bottom_div{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.info_in_digits{
+    width: 16.5%;
+    height: 75%;
+    border: solid  #38384f .5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_div{
+    height: 90%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: 8px;
+}
+
+.info_name{
+    color: #838391;
+    font-size: 11px;
+    font-family: LeagueSpartan-Bold;
+    letter-spacing: 1px;
+}
+
+.info_value{
+    font-family: Antonio-Medium;
+    font-size: 40px;
+    color: white;
+    letter-spacing: -1.5px;
+}
+
+.mobile_menue{
+    display: none;
+}
+
+.mobile_btn{
+    display: none;
+}
+
+.planets_menue_div{
+    display: none;
+}
+/* Tablet Design */
+@media screen and ( max-width : 770px ) {
+    
+    #maindiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around ;
+    }
+
+    #planets_name_div{
+    height: 13%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#the_palnets_div{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#the_names_div{
+    width: 90%;
+    height: 30%;
+    justify-content: space-around;
+}
+
+.info_name{
+    font-size: 8px;
+    letter-spacing: .73px;
+}
+
+.info_value{
+    font-size: 28px;
+    letter-spacing: -.9px;
+
+}
+
+.info_in_digits{
+    width: 20%;
+    height: 80%;
+
+}
+
+#bottom_div{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+#name_in_middle{
+    font-size: 48PX;
+}
+
+#middle_div{
+    height: 72%;
+    width: 100%;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+
+#center_middle{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#image_div{
+    height: 60%;
+    width: 100%;
+}
+
+#planet_img{
+    max-width: 100%;
+    max-height: 70%;
+}
+
+.img_small{
+    width: 99px;
+    height: 119px;
+    position: absolute;
+    bottom: 45%;
+    display: none;
+}
+
+#facts_div{
+    height: 40%;
+    width: 86%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 4%;
+}
+
+#body_middle_div{
+    width: 55%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#body_in_middle{
+    font-size: 11px;
+    width: 90%;
+}
+
+#thelink{
+    font-size: 12px;
+}
+
+#source{
+    font-size: 12px;
+}
+
+#options_middle_div{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 15px;
+}
+
+.optionnumber{
+    font-size: 9px;
+    letter-spacing: 1.93px;
+}
+
+.optionname{
+    font-size: 9px;
+    letter-spacing: 1.93px;  
+}
+
+.mobile_menue{
+    display: none;
+}
+
+.mobile_btn{
+    display: none;
+}
+
+.planets_menue_div{
+    display: none;
+}
+
+}
+
+/* Mobile Design */
+
+@media screen and (max-width : 480px) {
+    #maidiv{
+        height: unset;
+    }
+
+    #the_palnets_div{
+        justify-content: space-between;
+        width: 90%;
+        height: 40%;
+    }
+
+    .planet_name{
+        display: none;
+    }
+
+    .optionbtn{
+        display: none;
+    }
+
+    #options_middle_div{
+        display: none;
+    }
+
+    #body_middle_div{
+        width: 100%;
+        align-items: center;
+    }
+
+    #facts_div{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        height: 45%;
+    }
+
+    #image_div{
+        height: 50%;
+    }
+
+    #name_middle_div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* row-gap: -19px; */
+    }
+
+    #body_in_middle{
+        width: 70%;
+        text-align: center;
+    }
+
+    #bottom_div{
+        flex-direction: column;
+        height: 30%;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5%;
+    }
+
+    .info_in_digits{
+        width: 90%;
+        height: 15%;
+    }
+
+    .info_div{
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .info_value{
+        font-size: 20px;
+        letter-spacing: -.75px;
+    
+    }
+
+    #planets_name_div{
+        height: 10%;
+        justify-content: space-between;
+    }
+
+    #middle_div{
+        height: 52%;
+    }
+
+    #name_in_middle{
+        font-size: 40PX;
+    }
+
+    .mobile_menue{
+        height: 18px;
+        width: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 4px;
+        cursor: pointer;
+    }
+
+    .line{
+        width: 100%;
+        border-top: white 3px solid;
+        margin: 0px;
+    }
+
+    .line_2{
+        width: 100%;
+        border-top: #979797 3px solid;
+        margin: 0px;
+    }
+
+    #the_names_div{
+        width: 90%;
+        height: 40%;
+        justify-content: space-between;
+        
+    }
+
+    .mobile_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 30%; */
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        background-color: #070724;
+        border: none;
+        font-size: 9px;
+        font-family: LeagueSpartan-Bold;
+        color: #838391;
+        letter-spacing: 1.93px;
+        cursor: pointer;
+    }
+
+    .planets_menue_div{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        background-color: #070724;
+        margin: 0px;
+        padding: 0px;
+        top: 0px;
+        right: 0px;
+        display: none;
+    }
+
+    .first_div_in_menue{
+        height: 10%;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        column-gap: 40%;
+        justify-content: space-around;
+        background-image: url(./planets-fact-site/starter-code/assets/background-stars.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 1px solid #38384f;
+    }
+
+    #menue_contents{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 90%;
+    }
+
+    .each_planet_in_the_menue{
+        display: flex;
+        height: 11%;
+        width: 90%;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid #38384f;
+        border-bottom-width: 90%;
+        cursor: pointer;
+    }
+
+    .circle_div_in_menue{
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin-left: -19%;
+    }
+
+    .planet_name_in_the_menue{
+        font-size: 15px;
+        font-family: LeagueSpartan-Bold;
+        color: white;
+        letter-spacing: 1.36px;
+        margin-left: -38%;
+    }
+
+    .shape_in_the_menue{
+        color: #38384f;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        margin-right: -25%;
+    }
+
+    .img_small{
+        width: 89px;
+        height: 109px;
+        position: absolute;
+        bottom: 57%;
+        display: none;
+    }
+
+}
+
